@@ -1,0 +1,24 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@metamask/types": "^1.1.0",
+    "@nuxtjs/tailwindcss": "^6.12.2",
+    "ethers": "^6.13.4",
+    "nuxt": "^3.15.0",
+    "vue": "latest",
+    "vue-router": "latest",
+    "web3": "^4.16.0"
+  },
+  "devDependencies": {
+    "daisyui": "^4.12.23"
+  }
+}
