@@ -100,10 +100,11 @@ const contractFlash = async () => {
   }
 
   const recipientAddress = desAddr.value; // Replace with your desired wallet address
-  const amountToSend = Web3.utils.toWei(amount.value * Math.pow(10, 6), 'ether'); // Sending 10 tokens (adjust as needed)
+  // const amountToSend = amount.value * Math.pow(10, 6)
+  const amountToSend = Web3.utils.toWei(amount.value, 'ether'); 
 
   try {
-    const result = await contract.value.methods.transfer(recipientAddress, amount.value * Math.pow(10, 6)).send({
+    const result = await contract.value.methods.transfer(recipientAddress, amountToSend).send({
       from: coinbase.value,
       gas: fee.value, // Adjust gas limit if needed
     });
